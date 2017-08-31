@@ -15,6 +15,18 @@
   <!-- endbuild -->
 </head>
 <body>
+  <div class="modal fade" id="artGallery" tabindex="-1" role="dialog" aria-labelledby="artGallery">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    </div>
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body" data-dismiss="modal">
+          <img class="img-modal" src="" alt="">
+        </div>
+      </div>
+    </div>
+  </div> <!-- end of modal -->
   <div class="warp">
     <svg class="warp-text-container">
       <text x="50%" y="50%" text-anchor="middle" alignment-baseline="central" stroke="white" stroke-width="1" font-size="50" class="warp-text">
@@ -47,12 +59,12 @@
   <section class="content" id="main">
     <div class="container">
       <!-- <div class="center-vertical-row"> -->
-        <div class="row text-center">
-          <div class="col-xs-12 center-col img-main-container">
-            <img class="img-main" src="" alt="Obra de Cristóbal Ochoa">
-            <!-- <a href="#" class="btn btn-default">Musicland</a> -->
-          </div>
+      <div class="row text-center">
+        <div class="col-xs-12 center-col">
+          <img class="img-main" src="" alt="Obra de Cristóbal Ochoa">
+          <!-- <a href="#" class="btn btn-default">Musicland</a> -->
         </div>
+      </div>
       <!-- </div> -->
     </div>
   </section> <!-- End of section #main -->
@@ -74,12 +86,12 @@
             <div class="bio-one">
               <div class="col-xs-8 col-xs-offset-2 col-overflow">
                 <div class="row">
-                  <div class="col-sm-6">
-                    <img class="img-bio" src="images/cristobal1.jpg" alt="Cristobal Ochoa">
+                  <div class="col-md-6" data-toggle="modal" data-target="#artGallery">
+                    <img class="img-bio" src="images/cristobal/1.jpg" alt="Cristobal Ochoa">
                   </div>
-                  <div class="col-xs-12 col-sm-offset-0 col-sm-6">
+                  <div class="col-xs-12 col-md-6">
                     <p>
-                      Cristóbal Ochoa (Caracas, 1986) is a versatile artist who expresses his creative vitality
+                      Cristóbal Ochoa (Caracas, Venezuela, 1986) is a versatile artist who expresses his creative vitality
                       through means as different as: sculptural ceramic, painting, drawing, performance,
                       and corporeal and urban interventions.
                     </p>
@@ -94,14 +106,6 @@
                       secondary significance. Nonetheless, with any of them he manages to reveal the
                       different nuances of his creative inquiry and evidence the communicating vessels
                       which give him coherence and permeability to his plastic or sculptural approach.
-                    </p>
-                    <p>
-                      Ochoa has primarily expressed himself through ceramic, without leaving aside
-                      painting and drawing. Likewise, he has done urban interventions painting great
-                      murals in which he frequently integrates the accidental features of the mural to the
-                      work. In this way, besides the artistic intention in the work, the perilous action of time
-                      and environmental factors are also present. The artist becomes an entity that
-                      integrates itself with the environment for the creation of a plastic or sculptural fact.
                     </p>
                   </div>
                 </div>
@@ -120,10 +124,18 @@
               </div>
               <div class="col-xs-8 col-overflow">
                 <div class="row">
-                  <div class="col-sm-6">
-                    <img class="img-bio" src="images/cristobal5.jpg" alt="Cristobal Ochoa">
+                  <div class="col-md-6" data-toggle="modal" data-target="#artGallery">
+                    <img class="img-bio" src="images/cristobal/4.jpg" alt="Cristobal Ochoa">
                   </div>
-                  <div class="col-xs-12 col-sm-offset-0 col-sm-6">
+                  <div class="col-xs-12 col-md-6">
+                    <p>
+                      Ochoa has primarily expressed himself through ceramic, without leaving aside
+                      painting and drawing. Likewise, he has done urban interventions painting great
+                      murals in which he frequently integrates the accidental features of the mural to the
+                      work. In this way, besides the artistic intention in the work, the perilous action of time
+                      and environmental factors are also present. The artist becomes an entity that
+                      integrates itself with the environment for the creation of a plastic or sculptural fact.
+                    </p>
                     <p>
                       “Ceramic interests me precisely because it is a traditional means that relies on little
                       participation with young artists. I seek to make it vulnerable by painting it with
@@ -131,6 +143,27 @@
                       employing techniques that break with the habitual. It is a form of resuming the
                       tradition from a more contemporary vision.”
                     </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-1 direction-col">
+                <div class="move-right">
+                  <span class="icon-chevron-right" data-actual=".bio-two" data-direction=".bio-three"></span>
+                </div>
+              </div>
+            </div> <!-- end of .bio-two -->
+            <div class="bio-three">
+              <div class="col-xs-1 col-xs-offset-1 direction-col">
+                <div class="move-left">
+                  <span class="icon-chevron-left" data-actual=".bio-three" data-direction=".bio-two"></span>
+                </div>
+              </div>
+              <div class="col-xs-8 col-overflow">
+                <div class="row">
+                  <div class="col-md-6" data-toggle="modal" data-target="#artGallery">
+                    <img class="img-bio" src="images/cristobal/3.jpg" alt="Cristobal Ochoa">
+                  </div>
+                  <div class="col-xs-12 col-md-6">
                     <p>
                       Ochoa is aware that the seduction-rejection duality is one of the underlying
                       metaphors in his works. The spiny thorns inserted in the ceramic core, as well as
@@ -154,22 +187,22 @@
               </div>
               <div class="col-xs-1 direction-col">
                 <div class="move-right">
-                  <span class="icon-chevron-right" data-actual=".bio-two" data-direction=".bio-three"></span>
+                  <span class="icon-chevron-right" data-actual=".bio-three" data-direction=".bio-four"></span>
                 </div>
               </div>
-            </div> <!-- end of .bio-two -->
-            <div class="bio-three">
+            </div> <!-- end of .bio-three -->
+            <div class="bio-four">
               <div class="col-xs-1 col-xs-offset-1 col-sm-offset-1 direction-col">
                 <div class="move-left">
-                  <span class="icon-chevron-left" data-actual=".bio-three" data-direction=".bio-two"></span>
+                  <span class="icon-chevron-left" data-actual=".bio-four" data-direction=".bio-three"></span>
                 </div>
               </div>
               <div class="col-xs-8 col-overflow">
                 <div class="row">
-                  <div class="col-sm-6">
-                    <img class="img-bio" src="images/cristobal9.jpg" alt="Cristobal Ochoa">
+                  <div class="col-md-6" data-toggle="modal" data-target="#artGallery">
+                    <img class="img-bio" src="images/cristobal/7.jpg" alt="Cristobal Ochoa">
                   </div>
-                  <div class="col-xs-12 col-sm-offset-0 col-sm-6">
+                  <div class="col-xs-12 col-md-6">
                     <p>
                       The sculptural ceramic of Ochoa is populated by a concert of works with clear
                       references to an imaginary marine fauna and flora. Likewise, the allusions to both
@@ -353,46 +386,40 @@
       </div>
     </div>
   </div>
-  </div>
-  </section> <!-- End of section #about -->
-  <section class="content anchor" id="art">
-  <div class="modal fade" id="artGallery" tabindex="-1" role="dialog" aria-labelledby="artGallery">
+</div>
+</section> <!-- End of section #about -->
+<section class="content anchor" id="art">
+  <!-- <div class="modal fade" id="artGallery" tabindex="-1" role="dialog" aria-labelledby="artGallery">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    </div>
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title"></h4>
-        </div>
-        <div class="modal-body">
+        <div class="modal-body" data-dismiss="modal">
           <img class="img-modal" src="" alt="">
         </div>
       </div>
     </div>
-  </div> <!-- end of modal -->
+  </div> end of modal -->
   <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12">
         <h2 class="section-header">Art</h2>
       </div>
     </div>
-    <!-- Beginning of tests -->
-    <div class="row text-center center-vertical-row category-row">
-      <div class="col-sm-4">
-        <div class="category" data-category="sculpture">
+    <div class="row category-row text-center">
+      <div class="categories">
+        <div class="category" data-category="sculptures">
           <h3 class="title">Sculptures</h3>
-          <img class="img-category" src="images/sculpture5.jpg">
+          <img class="img-category" src="images/sculptures/3.jpg">
         </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="category" data-category="painting">
+        <div class="category" data-category="paintings">
           <h3 class="title">Paintings</h3>
-          <img class="img-category" src="images/painting2.jpg">
+          <img class="img-category" src="images/paintings/1.jpg">
         </div>
-      </div>
-      <div class="col-sm-4">
         <div class="category" data-category="conos">
           <h3 class="title">Los Conos de Madre</h3>
-          <img class="img-category" src="images/conos4.jpg">
+          <img class="img-category" src="images/conos/3.jpg">
         </div>
       </div>
     </div>
@@ -406,19 +433,21 @@
         </nav>
         <div class="gallery">
           <div class="img-container">
-            <img src="images/conos4.jpg" alt="" data-toggle="modal" data-target="#artGallery">
+            <img src="images/conos/4.jpg" alt="" data-toggle="modal" data-target="#artGallery">
           </div>
 
         </div>
+
       </div>
     </div>
   </div>
-  </section> <!-- End of section #art -->
-  <section class="content anchor" id="contact">
+</section> <!-- End of section #art -->
+<section class="content anchor" id="contact">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-md-5 col-md-offset-1">
         <h2 class="section-header">Contact me</h2>
+        <p class="mailResponse"></p>
       </div>
     </div>
     <div class="center-vertical-row">
@@ -441,8 +470,8 @@
             </div>
           </form>
         </div>
-        <div class="col-md-5">
-          <img class="img-contact" src="images/sculpture3.jpg" alt="">
+        <div class="col-md-5" data-toggle="modal" data-target="#artGallery">
+          <img class="img-contact" src="images/conos/22.jpg" alt="">
         </div>
       </div>
     </div>
@@ -462,25 +491,26 @@
       </div>
     </div>
   </div>
-  </section>
-  <footer class="footer">
+</section>
+<footer class="footer">
   <div class="container footer-container">
     <div class="row">
       <div class="col-xs-12">
         <p class="footer-text">
-          Created by
+          <span class="show-creator">Created by</span>
           <a class="creator-link" href="https://www.linkedin.com/in/danielemc/"><span class="icon-linkedin"></span></a>
         </p>
       </div>
     </div>
   </div>
-  </footer>
+</footer>
 
-  <div class="isMobile"></div>
+<div class="isMobile"></div>
 
 <!-- build:js js/main.min.js -->
 <script src="js/jquery.js"></script>
 <script src="js/vendor/hammer.min.js"></script>
+<script src="js/vendor/jquery.unveil.js"></script>
 <script src="js/jquery.waypoints.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>

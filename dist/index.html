@@ -2,18 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="author" content="Daniel Marcano">
+  <!-- <meta name="author" content="Daniel Marcano">
   <meta name="description" content="Cristóbal Ochoa's Website">
-  <meta name="keywords" content="Cristobal, Cristobal Ochoa, Cristóbal,
-  Cristóbal Ochoa, Artist, Venezuela, 8a, Venezuelan artist, Portfolio, Art,
-  Gallery, Paintings, Sculptures, Los Conos de Madre, Contact, CV">
+  <meta name="keywords" content="Cristobal, Cristobal Ochoa, Cristóbal, Cristóbal Ochoa, Artist, Venezuela, 8a"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Cristóbal Ochoa</title>
+  <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cristóbal Ochoa</title>-->
 
   <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
+  <div class="modal fade" id="artGallery" tabindex="-1" role="dialog" aria-labelledby="artGallery">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    </div>
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body" data-dismiss="modal">
+          <img class="img-modal" src="" alt="">
+        </div>
+      </div>
+    </div>
+  </div> <!-- end of modal -->
   <div class="warp">
     <svg class="warp-text-container">
       <text x="50%" y="50%" text-anchor="middle" alignment-baseline="central" stroke="white" stroke-width="1" font-size="50" class="warp-text">
@@ -376,7 +386,7 @@
 </div>
 </section> <!-- End of section #about -->
 <section class="content anchor" id="art">
-  <div class="modal fade" id="artGallery" tabindex="-1" role="dialog" aria-labelledby="artGallery">
+  <!-- <div class="modal fade" id="artGallery" tabindex="-1" role="dialog" aria-labelledby="artGallery">
     <div class="modal-header">
       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
     </div>
@@ -387,35 +397,13 @@
         </div>
       </div>
     </div>
-  </div> <!-- end of modal -->
+  </div> end of modal -->
   <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12">
         <h2 class="section-header">Art</h2>
       </div>
     </div>
-    <!-- Beginning of tests -->
-    <!-- <div class="row text-center center-vertical-row category-row">
-      <div class="col-sm-4">
-        <div class="category" data-category="sculptures">
-          <h3 class="title">Sculptures</h3>
-          <img class="img-category" src="images/sculptures/3.jpg">
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="category" data-category="paintings">
-          <h3 class="title">Paintings</h3>
-          <img class="img-category" src="images/paintings/1.jpg">
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="category" data-category="conos">
-          <h3 class="title">Los Conos de Madre</h3>
-          <img class="img-category" src="images/conos/3.jpg">
-        </div>
-      </div>
-    </div> -->
-    <!-- Inicio de las pruebas -->
     <div class="row category-row text-center">
       <div class="categories">
         <div class="category" data-category="sculptures">
@@ -432,7 +420,6 @@
         </div>
       </div>
     </div>
-    <!-- fin de las pruebas -->
     <div class="row gallery-row">
       <div class="col-xs-12">
         <nav>
